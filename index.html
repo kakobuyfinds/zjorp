@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#231c34">
+  <title>VigorBuy spreadsheet – katalog i poradnik zakupowy po polsku</title>
+  <meta name="description" content="VigorBuy spreadsheet po polsku: 10 kategorii HipoBuyFind i poradnik, jak porównać rozmiary, sprawdzić zdjęcia QC i oszacować koszt dostawy do Polski.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="VigorBuy spreadsheet – katalog i poradnik po polsku">
+  <meta property="og:description" content="Przeglądaj kategorie HipoBuyFind i dowiedz się, jak sprawdzić rozmiar, zdjęcia QC oraz koszt dostawy do Polski.">
+  <style>
+    :root{color-scheme:light;--ink:#231c34;--paper:#f8f5ef;--muted:#554963;--line:#d8cfe0;--violet:#e9ddf5;--lime:#e6f99a}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure,ul,ol{margin:0}
+    h1,h2,h3{line-height:1.12;overflow-wrap:anywhere}
+    h1{font-size:clamp(2.7rem,7vw,5.5rem);letter-spacing:-.075em}
+    h2{font-size:clamp(1.65rem,4vw,2.65rem);letter-spacing:-.045em}
+    h3{font-size:1.27rem}
+    a{color:inherit}
+    :focus-visible{outline:3px solid #a74fc2;outline-offset:4px}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    .top{background:var(--ink);color:white}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.8rem}
+    .bar a{font-weight:750;text-underline-offset:.2em}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;align-items:stretch;margin-block:1rem 2.8rem;border:1px solid var(--line);border-radius:1.45rem;overflow:hidden;background:var(--violet)}
+    .intro{padding:clamp(1.35rem,5vw,3.8rem);align-self:center}
+    .intro p{margin-top:1rem;max-width:48ch}
+    .hero figure{background:#fff;display:grid;grid-template-rows:1fr auto;min-width:0}
+    .hero img{aspect-ratio:4/3;object-fit:contain;align-self:center}
+    figcaption{padding:.55rem .8rem;color:var(--muted);font-size:.86rem}
+    .cta{display:inline-flex;align-items:center;min-height:2.9rem;margin-top:1.15rem;padding:.55rem 1rem;border:1px solid var(--ink);border-radius:.5rem;background:var(--lime);color:var(--ink);font-weight:750;text-decoration:none}
+    .cta:hover,.categories a:hover{background:#d7ee77}
+    section{margin-block:2.8rem}
+    .lead{margin:.55rem 0 1rem;color:var(--muted);max-width:68ch}
+    .categories,.photos{list-style:none;padding:0;display:grid;gap:.65rem}
+    .categories{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;min-height:3.4rem;align-items:center;padding:.65rem .8rem;border:1px solid var(--line);border-radius:.55rem;background:#fff;font-weight:700;text-decoration:none}
+    .photos{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:1.2rem}
+    .photos figure{height:100%;border:1px solid var(--line);border-radius:.65rem;overflow:hidden;background:#fff}
+    .photos img{aspect-ratio:1;object-fit:contain}
+    .stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
+    article{padding:1.2rem;border:1px solid var(--line);border-radius:.8rem;background:#fff}
+    article:nth-child(2),article:nth-child(3){background:#f0e7f7}
+    article p{margin-top:.65rem}
+    .checklist{padding-left:1.35rem}
+    .checklist li+li{margin-top:.45rem}
+    .faq{max-width:78ch}
+    .faq h2{margin-bottom:1rem}
+    details{border-top:1px solid var(--line);padding:.75rem 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:750}
+    details p{margin:.5rem 0 .1rem 1rem}
+    footer{padding:1.65rem 0;background:var(--ink);color:white}
+    footer a{text-underline-offset:.2em}
+    @media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{max-height:16rem}.categories{grid-template-columns:repeat(2,minmax(0,1fr))}.photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:520px){.stories{grid-template-columns:1fr}.bar{font-size:.9rem}.hero{margin-bottom:2rem}section{margin-block:2rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "VigorBuy spreadsheet – katalog i poradnik zakupowy po polsku",
+        "description": "Przewodnik po kategoriach HipoBuyFind, rozmiarach, zdjęciach QC i kosztach dostawy do Polski.",
+        "inLanguage": "pl",
+        "about": {"@type": "Thing", "name": "VigorBuy spreadsheet"},
+        "spatialCoverage": {"@type": "Country", "name": "Polska"}
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "pl",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Co to jest VigorBuy spreadsheet?",
+            "acceptedAnswer": {"@type": "Answer", "text": "To określenie katalogu lub listy odnośników do produktów, zwykle z podziałem na kategorie. Na tej stronie odnośniki do kategorii prowadzą do HipoBuyFind."}
+          },
+          {
+            "@type": "Question",
+            "name": "Jak dobrać rozmiar sneakersów na podstawie długości wkładki?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Zmierz wkładkę dobrze dopasowanej pary i porównaj wynik w centymetrach z tabelą sprzedawcy. Sprawdź, czy tabela podaje długość wkładki czy stopy, bo te pomiary oznaczają różne rzeczy."}
+          },
+          {
+            "@type": "Question",
+            "name": "Czy zdjęcia QC potwierdzają autentyczność produktu?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Nie. Zdjęcia QC pomagają porównać wariant i ocenić widoczny stan produktu. Jeśli zależy Ci na autentyczności, sprawdź pochodzenie towaru oraz dokumenty sprzedawcy."}
+          },
+          {
+            "@type": "Question",
+            "name": "Jak oszacować koszt dostawy do Polski?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Po wybraniu produktu sprawdź wycenę dla polskiego adresu i parametrów paczki. Do ceny towaru dolicz potwierdzone opłaty za dostawę i obsługę oraz ewentualne należności importowe."}
+          },
+          {
+            "@type": "Question",
+            "name": "Co zrobić, gdy link do produktu przestał działać?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Wróć do odpowiedniej kategorii i wyszukaj nazwę modelu oraz wariant. Przed zakupem sprawdź, czy nowe ogłoszenie opisuje ten sam produkt i rozmiar."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/zjorp/">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <span>VigorBuy spreadsheet</span>
+      <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div class="intro">
+        <h1>VigorBuy spreadsheet</h1>
+        <p>Szukasz butów, odzieży lub dodatków? Zacznij od kategorii HipoBuyFind, a przed zamówieniem porównaj rozmiary, sprawdź zdjęcia QC i przewidywany koszt dostawy do Polski.</p>
+        <a class="cta" href="https://www.hipobuyfind.com">Otwórz HipoBuyFind</a>
+      </div>
+      <figure>
+        <img src="https://www.kickgame.co.uk/cdn/shop/products/louis-vuitton-air-force-1-low-virgil-abloh-white_1.png?v=1667830573&amp;width=700" width="700" height="525" fetchpriority="high" loading="eager" alt="Biały sneaker Louis Vuitton × Nike Air Force 1 Low projektu Virgila Abloha">
+        <figcaption>Louis Vuitton × Nike Air Force 1 Low · zdjęcie poglądowe</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="kategorie">
+      <h2 id="kategorie">Kategorie produktów</h2>
+      <p class="lead">Wybierz dział katalogu HipoBuyFind.</p>
+      <nav aria-label="Kategorie HipoBuyFind">
+        <ul class="categories">
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Buty</a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry</a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirty</a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Kurtki</a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Spodnie i szorty</a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Nakrycia głowy</a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Komplety</a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Bielizna</a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Koszulki sportowe</a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Akcesoria</a></li>
+        </ul>
+      </nav>
+      <ul class="photos" aria-label="Zdjęcia poglądowe odzieży i akcesoriów">
+        <li><figure><img src="https://www.consortium.co.uk/media/catalog/product/cache/1/image/040ec09b1e35df139433887a97daa66f/n/i/nike-sportswear-club-fleece-pullover-hooded-sweatshirt-black-white-white-bv2654-010_0000_cat_1.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Czarna bluza Nike Club Fleece z kapturem"><figcaption>Nike Club Fleece</figcaption></figure></li>
+        <li><figure><img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beżowa czapka Gucci z daszkiem i wzorem GG"><figcaption>Czapka Gucci GG</figcaption></figure></li>
+        <li><figure><img src="https://www.luxe-em.com/cdn/shop/files/001_3e78aa64-04f3-4ec6-81eb-e3aad7cdb5bc.jpg?v=1759779439&amp;width=480" width="480" height="480" loading="lazy" decoding="async" alt="Wzorzysta jedwabna apaszka Hermès Carré 90"><figcaption>Hermès Carré 90</figcaption></figure></li>
+        <li><figure><img src="https://assets.christiandior.com/is/image/diorprod/N3523WOMZID301_SBG_E01-1?wid=480&amp;qlt=80" width="480" height="480" loading="lazy" decoding="async" alt="Naszyjnik Dior Clair D Lune w złotym kolorze z kryształkami"><figcaption>Dior Clair D Lune</figcaption></figure></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="poradniki">
+      <h2 id="poradniki">Poradniki przed zakupem</h2>
+      <p class="lead">Cztery rzeczy do sprawdzenia między otwarciem katalogu a złożeniem zamówienia.</p>
+      <div class="stories">
+        <article>
+          <h3>VigorBuy finds – jak porównywać oferty?</h3>
+          <p>Jeśli szukasz sneakersów według modelu, zapisz jego pełną nazwę, kod referencyjny i wersję kolorystyczną. Przy porównywaniu ofert tego samego produktu sprawdź dostępność wybranego wariantu oraz to, co obejmuje zestaw. Aktywny link do produktu może nadal prowadzić do ogłoszenia z wyprzedanym rozmiarem.</p>
+        </article>
+        <article>
+          <h3>Zdjęcia QC VigorBuy – które detale obejrzeć?</h3>
+          <p>Skrót QC oznacza kontrolę jakości. Gdy są dostępne zdjęcia kontroli jakości konkretnej sztuki, porównaj parę butów z obu stron i obejrzyj podeszwę. Przy odzieży przyjrzyj się szwom i metce, przy dodatkach sprawdź zapięcie i wykończenie. Jeśli zdjęcie opisano jako poglądowe, poproś o ujęcie wybranego wariantu przed podjęciem decyzji.</p>
+        </article>
+        <article>
+          <h3>Tabela rozmiarów butów i odzieży</h3>
+          <p>Przy wyborze rozmiaru butów zwróć uwagę na długość wkładki w centymetrach. Przy doborze rozmiaru bluzy porównaj szerokość pod pachami, długość rękawa i długość całkowitą z ubraniem, które dobrze leży. Przy spodniach ustal, czy sprzedawca podaje obwód pasa, czy szerokość mierzoną na płasko.</p>
+        </article>
+        <article>
+          <h3>Dostawa do Polski – jak porównać koszty?</h3>
+          <p>Przy porównywaniu metod wysyłki sprawdź wagę paczki, jej wymiary i dostępność śledzenia. Waga gabarytowa może wpływać na koszt przesyłki z Chin. Żeby oszacować całkowity koszt zamówienia w PLN, uwzględnij kurs płatności, opłatę za obsługę i ewentualne należności importowe. Przed zapłatą sprawdź też warunki zwrotu towaru.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="lista">
+      <h2 id="lista">Lista kontrolna zamówienia</h2>
+      <p class="lead">Zapisz te informacje przy każdej porównywanej ofercie.</p>
+      <ol class="checklist">
+        <li><strong>Oferta.</strong> Nazwa modelu, kolor, wybrany rozmiar i aktualna dostępność produktu.</li>
+        <li><strong>Dopasowanie.</strong> Wymiary odzieży na płasko albo długość stopy i odpowiednia tabela sprzedawcy.</li>
+        <li><strong>Stan.</strong> Zdjęcia produktu z kilku stron, widoczne wady i zgodność z opisem.</li>
+        <li><strong>Wysyłka.</strong> Wycena przesyłki do Polski, przewidywany czas dostawy i termin zgłoszenia zwrotu.</li>
+      </ol>
+    </section>
+
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq">Często zadawane pytania</h2>
+      <details open>
+        <summary>Co to jest VigorBuy spreadsheet?</summary>
+        <p>To określenie katalogu lub listy odnośników do produktów, zwykle z podziałem na kategorie. Na tej stronie odnośniki do kategorii prowadzą do HipoBuyFind.</p>
+      </details>
+      <details>
+        <summary>Jak dobrać rozmiar sneakersów na podstawie długości wkładki?</summary>
+        <p>Zmierz wkładkę dobrze dopasowanej pary i porównaj wynik w centymetrach z tabelą sprzedawcy. Sprawdź, czy tabela podaje długość wkładki czy stopy, bo te pomiary oznaczają różne rzeczy.</p>
+      </details>
+      <details>
+        <summary>Czy zdjęcia QC potwierdzają autentyczność produktu?</summary>
+        <p>Nie. Zdjęcia QC pomagają porównać wariant i ocenić widoczny stan produktu. Jeśli zależy Ci na autentyczności, sprawdź pochodzenie towaru oraz dokumenty sprzedawcy.</p>
+      </details>
+      <details>
+        <summary>Jak oszacować koszt dostawy do Polski?</summary>
+        <p>Po wybraniu produktu sprawdź wycenę dla polskiego adresu i parametrów paczki. Do ceny towaru dolicz potwierdzone opłaty za dostawę i obsługę oraz ewentualne należności importowe.</p>
+      </details>
+      <details>
+        <summary>Co zrobić, gdy link do produktu przestał działać?</summary>
+        <p>Wróć do odpowiedniej kategorii i wyszukaj nazwę modelu oraz wariant. Przed zakupem sprawdź, czy nowe ogłoszenie opisuje ten sam produkt i rozmiar.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Niezależny poradnik zakupowy. Zdjęcia mają charakter poglądowy.</p>
+      <a href="https://www.hipobuyfind.com">Przejdź do HipoBuyFind</a>
+    </div>
+  </footer>
+</body>
+</html>
